@@ -7,7 +7,18 @@ import AddProduct from './pages/AddProduct';
 import Cart from './pages/Cart';
 
 function App() {
-  return
-  <Router>
-    <Header/>
+   return (
+     <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/produtos" element={<Products />} />
+        <Route path="/cadastrar-produto" element={<AddProduct
+/>} />
+        <Route path="/carrinho" element={<Cart />} />
+      </Routes>
+    </Router>
+  );
 }
+
+  export default App;
